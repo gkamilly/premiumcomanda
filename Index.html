@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Pedidos</title>
+</head>
+<body>
+    <script>
+        function gotowhatsapp() {
+            
+            var nome = document.getElementById("nome").value;
+            var numero = document.getElementById("numero").value;
+
+            var pedido = document.getElementById("pedido").value;
+            var npedido = document.getElementById("npedido").value;
+            var pedido1 = document.getElementById("pedido1").value;
+            var npedido1 = document.getElementById("npedido1").value;
+            var pedido2 = document.getElementById("pedido2").value;
+            var npedido2 = document.getElementById("npedido2").value;
+            var pedido3 = document.getElementById("pedido3").value;
+            var npedido3 = document.getElementById("npedido3").value;
+            var pedido4 = document.getElementById("pedido4").value;
+            var npedido4 = document.getElementById("npedido4").value;
+            var pedido5 = document.getElementById("pedido5").value;
+            var npedido5 = document.getElementById("npedido5").value;
+
+            var rua = document.getElementById("rua").value;
+            var bairro = document.getElementById("bairro").value;
+            var referencia = document.getElementById("referencia").value;
+            var casa = document.getElementById("casa").value;
+
+            var pagamento = document.getElementById("pagamento").value;
+            var quantia = document.getElementById("quantia").value;
+            var pagamento1 = document.getElementById("pagamento1").value;
+            var quantia1 = document.getElementById("quantia1").value;
+            var pagamento2 = document.getElementById("pagamento2").value;
+            var quantia2 = document.getElementById("quantia2").value;
+
+            var total = document.getElementById("total").value;
+
+        
+            var url = "https://wa.me/5591993012398?text=" 
+            + "*Nome:* " + nome + "%0a"
+            + "*Numero:* " + numero + "%0a" + "%0a"
+            + "*Pedido:* " + "%0a" 
+            + npedido + " - " + pedido + "%0a"
+            + npedido1 + " - " + pedido1 + "%0a" 
+            + npedido2 + " - " + pedido2 +  "%0a" 
+            + npedido3 + " - " + pedido3 + "%0a"
+            + npedido4 + " - " + pedido4 + "%0a"
+            + npedido5 + " - " + pedido5 + "%0a" + "%0a"
+            + "*Endereço:* " + "%0a" 
+            + "Rua: " + rua + "%0a" 
+            + "Bairro: " + bairro + "%0a" 
+            + "Referência: " + referencia + "%0a" 
+            + "Casa: " + casa + "%0a" + "%0a"
+            + "*Pagamento:*" + "%0a" 
+            + pagamento + "= R$" + quantia + "%0a" 
+            + pagamento1 + "= R$" + quantia1 + "%0a" 
+            + pagamento2 + "= R$" + quantia2 + "%0a" +  "%0a"
+            + "*TOTAL =* R$ " + total; 
+        
+            window.open(url, '_blank').focus();
+        }
+        </script>
+
+    <form>
+        <fieldset>
+            <div class="primeirasec">
+                <section class="sec_ped">
+                    <h2>Pedido</h2>
+        
+                    <div>
+                        <label for="">Nome</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div>
+                        <label for="">Numero</label>
+                        <input type="text" name="numero" id="numero">
+                    </div>
+                    <div>
+                        <input type="text" name="npedido" id="npedido" class="ped">
+                        <select name="pedido" id="pedido">
+                            <option value="">Nenhum</option>
+                            <option value="Yakissoba de Carne e Frango">Yakissoba de Carne e Frango</option>
+                            <option value="Yakissoba de Camarão">Yakissoba de Camarão</option>
+                        </select><br>
+        
+                        <input type="text" name="npedido1" id="npedido1" class="ped">
+                        <select name="pedido1" id="pedido1">
+                            <option value="">Nenhum</option>
+                            <option value="Queijo">Queijo</option>
+                            <option value="Queijo e Presunto">Queijo e Presunto</option>
+                            <option value="Queijo e Calabresa">Queijo e Calabresa</option>
+                            <option value="Frango e Requeijão">Frango e Requeijão</option>
+                            <option value="Romeu e Julieta">Romeu e Julieta</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select><br>
+        
+                        <input type="text" name="npedido2" id="npedido2" class="ped">
+                        <select name="pedido2" id="pedido2">
+                            <option value="">Nenhum</option>
+                            <option value="Queijo">Queijo</option>
+                            <option value="Queijo e Presunto">Queijo e Presunto</option>
+                            <option value="Queijo e Calabresa">Queijo e Calabresa</option>
+                            <option value="Frango e Requeijão">Frango e Requeijão</option>
+                            <option value="Romeu e Julieta">Romeu e Julieta</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select><br>
+        
+                        <input type="text" name="npedido3" id="npedido3" class="ped">
+                        <select name="pedido3" id="pedido3">
+                            <option value="">Nenhum</option>
+                            <option value="Queijo">Queijo</option>
+                            <option value="Queijo e Presunto">Queijo e Presunto</option>
+                            <option value="Queijo e Calabresa">Queijo e Calabresa</option>
+                            <option value="Frango e Requeijão">Frango e Requeijão</option>
+                            <option value="Romeu e Julieta">Romeu e Julieta</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select><br>
+        
+                        <input type="text" name="npedido4" id="npedido4" class="ped">
+                        <select name="pedido4" id="pedido4">
+                            <option value="">Nenhum</option>
+                            <option value="Queijo">Queijo</option>
+                            <option value="Queijo e Presunto">Queijo e Presunto</option>
+                            <option value="Queijo e Calabresa">Queijo e Calabresa</option>
+                            <option value="Frango e Requeijão">Frango e Requeijão</option>
+                            <option value="Romeu e Julieta">Romeu e Julieta</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select><br>
+        
+                        <input type="text" name="npedido5" id="npedido5" class="ped">
+                        <select name="pedido5" id="pedido5">
+                            <option value="">Nenhum</option>
+                            <option value="Queijo">Queijo</option>
+                            <option value="Queijo e Presunto">Queijo e Presunto</option>
+                            <option value="Queijo e Calabresa">Queijo e Calabresa</option>
+                            <option value="Frango e Requeijão">Frango e Requeijão</option>
+                            <option value="Romeu e Julieta">Romeu e Julieta</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select><br>
+                        
+                    </div>
+                </section>
+    
+                
+                <section class="sec_end">
+                    <h2>Endereço</h2>
+        
+                    <div>
+                        <label for="">Rua:</label>
+                        <input type="text" name="rua" id="rua">
+                    </div>
+                    <div>
+                        <label for="">Bairro:</label>
+                        <select name="bairro" id="bairro">
+                            <option selected value="">Não especificado</option>
+                            <option value="Cain'Agua">Cain'Agua</option>
+                            <option value="Campina">Campina</option>
+                            <option value="Centro">Centro</option>
+                            <option value="Constran">Constran</option>
+                            <option value="Fátima">Fátima</option>
+                            <option value="Canebo">Canebo</option>
+                            <option value="Maranhense">Maranhense</option>
+                            <option value="Parmalat">Parmalat</option>
+                            <option value="Pedreira">Pedreira</option>
+                            <option value="Portelinha">Portelinha</option>
+                            <option value="Portelinha 2">Portelinha 2</option>
+                            <option value="Tabom">Tabom</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Referência:</label>
+                        <textarea name="referencia" id="referencia" rows="2"></textarea>
+                    </div>
+                    <div>
+                        <label for="">Casa:</label>
+                        <textarea name="casa" id="casa" rows="1"></textarea>
+                    </div>
+                </section>
+            </div>
+
+            <section class="sec_pag">
+                <h2>Pagamento</h2>
+    
+                <div>
+                    <label>Pagamento 1</label>
+                    <select name="pagamento" id="pagamento">
+                        <option selected value="Dinheiro">Dinheiro</option>
+                        <option value="Cartão">Cartão</option>
+                        <option value="Pix">Pix</option>
+                    </select>
+                    <input type="text" name="quantia" id="quantia" class="qt">
+                </div>
+                <div>
+                    <label>Pagamento 2</label>
+                    <select name="pagamento1" id="pagamento1">
+                        <option selected value="">Selecione</option>
+                        <option value="Dinheiro">Dinheiro</option>
+                        <option value="Cartão">Cartão</option>
+                        <option value="Pix">Pix</option>
+                    </select>
+                    <input type="text" name="quantia1" id="quantia1" class="qt">
+                </div>
+                <div>
+                    <label>Pagamento 3</label>
+                    <select name="pagamento2" id="pagamento2">
+                        <option selected value="">Selecione</option>
+                        <option value="Dinheiro">Dinheiro</option>
+                        <option value="Cartão">Cartão</option>
+                        <option value="Pix">Pix</option>
+                    </select>
+                    <input type="text" name="quantia2" id="quantia2" class="qt">
+                </div>
+                <div>
+                    <label for="">TOTAL</label>
+                    <input type="text" name="total" id="total" class="qt">
+                </div>
+            </section>
+            <div class="button">
+                <button onclick="gotowhatsapp()" type="submit">Enviar</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+        function calcular() {
+            var n1 = document.querySelector('#n1').value;
+            var n2 = document.querySelector('#n2').value;
+            var n3 = document.querySelector('#n3').value;
+            var n4 = document.querySelector('#n4').value;
+            var n5 = document.querySelector('#n5').value;
+            var n6 = document.querySelector('#n5').value;
+            var x = 3;
+
+                var resultado = parseInt(n1) + parseInt(n2) + parseInt(n3);
+                var resultado1 = resultado / parseInt(x);
+                var resultado2 = resultado1 + parseInt(n4) + parseInt(n5) + parseInt(n6);
+                document.querySelector(".resultado").innerHTML = resultado2;
+        }
+
+        function calcular1() {
+            var num1 = document.querySelector('#num1').value;
+            var num2 = document.querySelector('#num2').value;
+            var num4 = document.querySelector('#num4').value;
+            var x = 2;
+
+                var resultadoo = parseInt(num1) + parseInt(num2);
+                var resultadoo1 = resultadoo / parseInt(x);
+                var resultadoo2 = resultadoo1 + parseInt(num4) + parseInt(num5) + parseInt(num6);
+                document.querySelector(".resultado1").innerHTML = resultadoo2;
+        }
+    </script>
+<!--
+
+    <aside>
+        <h3>Pizza 3 sabores:</h3>
+        <div>
+            <label>Sabor 1</label>
+            <input value="0" type="number" name="n1" id="n1">
+        </div>
+        <div>
+            <label>Sabor 2</label>
+            <input value="0" type="number" name="n2" id="n2">
+        </div>
+        <div>
+            <label>Sabor 3</label>
+            <input value="0" type="number" name="n3" id="n3">
+        </div>
+        <div>
+            <label>Refrigerante</label>
+            <input value="0" type="number" name="n4" id="n4">
+        </div>
+        <div>
+            <label>Batata</label>
+            <input value="0" type="number" name="n5" id="n5">
+        </div>
+        <div>
+            <label>Adicional</label>
+            <input value="0" type="number" name="n6" id="n6">
+        </div>
+
+        <button onclick="calcular()">Calcular</button>
+<br>
+        <p class="resultado"></p>
+    </aside>
+
+    <aside>
+        <h3>Pizza 2 sabores:</h3>
+        <div>
+            <label>Sabor 1</label>
+            <input value="0" type="number" name="num1" id="num1">
+        </div>
+        <div>
+            <label>Sabor 2</label>
+            <input value="0" type="number" name="num2" id="num2">
+        </div>
+        <div>
+            <label>Refrigerante</label>
+            <input value="0" type="number" name="num4" id="num4">
+        </div>
+        <div>
+            <label>Batata</label>
+            <input value="0" type="number" name="num5" id="num5">
+        </div>
+        <div>
+            <label>Adicional</label>
+            <input value="0" type="number" name="num6" id="num6">
+        </div>
+
+        <button onclick="calcular1()">Calcular</button>
+<br>
+        <p class="resultado1"></p>
+    </aside>
+-->
+</body>
+</html>
